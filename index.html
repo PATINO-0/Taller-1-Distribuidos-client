@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <main class="main-content">
+        <article class="post">
+            <section>
+                <h2>Protocolo Http</h2>
+                <button id="btnFetch">Obtener Usuarios</button>
+                <form id="myForm">
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="email" id="email" placeholder="Email">
+                    <button type="submit">Registrar</button>
+                </form>
+                <div id="response"></div>
+            </section>
+
+            <!-- Sección para actualizar usuario (Corregido) -->
+            <section>
+                <h2>Actualizar Usuario</h2>
+                <input type="number" id="updateId" placeholder="ID del usuario">
+                <input type="text" id="updateNombre" placeholder="Nuevo Nombre">
+                <input type="email" id="updateEmail" placeholder="Nuevo Email">
+                <button id="btnUpdate">Actualizar</button>
+            </section>
+
+            <!-- Sección para eliminar usuario -->
+            <section>
+                <h2>Eliminar Usuario</h2>
+                <input type="number" id="deleteId" placeholder="ID del usuario">
+                <button id="btnDelete">Eliminar</button>
+            </section>
+
+            <section>
+                <h2>Usuarios Registrados</h2>
+                <ul id="userList"></ul>
+            </section>
+        </article>
+    </main>
+    
+    <script src="./src/scripts/http.js" defer></script>
+</body>
+</html>
